@@ -1,6 +1,6 @@
 type Theme = 'light' | 'dark';
 const getThemeHelpText = (theme: Theme): string =>
-  theme === `dark` ? `Customise the Dark theme.` : `Customise the Light theme.`;
+  theme === `dark` ? `Hello from the Dark Theme.` : `Hello from the Light Theme.`;
 
 export type Action = {
   type: `CHANGE_THEME`;
