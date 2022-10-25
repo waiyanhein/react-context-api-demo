@@ -1,4 +1,5 @@
 type Theme = 'light' | 'dark';
+const defaultTheme: Theme = `light`;
 const getThemeHelpText = (theme: Theme): string =>
   theme === `dark` ? `Hello from the Dark Theme.` : `Hello from the Light Theme.`;
 
@@ -15,8 +16,8 @@ export type ThemeState = {
 };
 
 export const initialState: ThemeState = {
-  theme: `light`,
-  helpText: getThemeHelpText(`light`)
+  theme: defaultTheme,
+  helpText: getThemeHelpText(defaultTheme)
 };
 
 export const reducer = (state: ThemeState, action: Action): ThemeState => {
