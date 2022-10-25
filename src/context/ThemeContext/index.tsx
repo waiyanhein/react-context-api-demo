@@ -14,7 +14,12 @@ export const ThemeProvider = ({ children }: React.PropsWithChildren<{}>) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const toggleTheme = () => {
-    // TODO: implement
+    dispatch({
+      type: `CHANGE_THEME`,
+      payload: {
+        theme: state.theme === `light` ? `dark` : `light`
+      }
+    });
   };
 
   return (

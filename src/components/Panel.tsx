@@ -1,7 +1,10 @@
 import React, { ReactNode } from 'react';
+import { useThemeContext } from '../context/ThemeContext';
 
 const Panel = ({ children }: { children: ReactNode }) => {
-  return <div className={'panel'}>{children}</div>;
+  const { state: themeState } = useThemeContext();
+
+  return <div className={`panel ${themeState.theme}`}>{children}</div>;
 };
 
 export default Panel;

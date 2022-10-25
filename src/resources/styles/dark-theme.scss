@@ -1,0 +1,26 @@
+$color-dark-primary-bg: #0d0d0d;
+$color-dark-secondary-bg: #262626;
+$color-dark-text: #e6e6e6;
+
+.navigation.dark {
+  background: $color-dark-primary-bg;
+
+  a {
+    color: $color-dark-text;
+  }
+}
+
+.content.dark {
+  background: $color-dark-secondary-bg;
+  color: $color-dark-text;
+}
+
+.panel.dark {
+  background: $color-dark-primary-bg;
+  color: $color-dark-text;
+}
+
+.button.dark {
+  background: $color-dark-primary-bg;
+  color: $color-dark-text;
+}

@@ -1,32 +1,24 @@
 import React from 'react';
-import {
-  BrowserRouter,
-  Routes, // instead of "Switch"
-  Route,
-  Link
-} from 'react-router-dom';
-import './App.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './resources/styles/app.scss';
+import { ThemeProvider } from './context/ThemeContext';
 import Dashboard from './containers/Dashboard';
 import Settings from './containers/Settings';
+import Navigation from './components/Navigation';
 
 function App() {
   return (
-    <BrowserRouter>
-      <div>
-        <ul className={'navigation'}>
-          <li>
-            <Link to="/">Dashboard</Link>
-          </li>
-          <li>
-            <Link to="/settings">Settings</Link>
-          </li>
-        </ul>
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/settings" element={<Settings />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <div className={'app'}>
+          <Navigation />
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 

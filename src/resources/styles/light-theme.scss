@@ -1,0 +1,26 @@
+$color-light-primary-bg: #cccccc;
+$color-light-secondary-bg: #f2f2f2;
+$color-light-text: #0d0d0d;
+
+.navigation.light {
+  background: $color-light-primary-bg;
+
+  a {
+    color: $color-light-text;
+  }
+}
+
+.content.light {
+  background: $color-light-secondary-bg;
+  color: $color-light-text;
+}
+
+.panel.light {
+  background: $color-light-primary-bg;
+  color: $color-light-text;
+}
+
+.button.light {
+  background: $color-light-primary-bg;
+  color: $color-light-text;
+}
