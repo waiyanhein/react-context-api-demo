@@ -12,15 +12,16 @@ $color-light-text: #0d0d0d;
 
 .content.light {
   background: $color-light-secondary-bg;
-  color: $color-light-text;
 }
 
 .panel.light {
   background: $color-light-primary-bg;
-  color: $color-light-text;
 }
 
 .button.light {
   background: $color-light-primary-bg;
+}
+
+.text.light {
   color: $color-light-text;
 }

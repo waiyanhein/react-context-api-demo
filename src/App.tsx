@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './resources/styles/app.scss';
 import { ThemeProvider } from './context/ThemeContext';
 import Dashboard from './containers/Dashboard';
 import Settings from './containers/Settings';
 import Navigation from './components/Navigation';
+import './resources/styles/app.scss';
 
 function App() {
   return (

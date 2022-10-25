@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { useThemeContext } from '../context/ThemeContext';
+import Text from './Text';
 
 type ButtonProps = {
   onClick: () => void;
@@ -11,7 +12,7 @@ const Button = ({ onClick, children }: ButtonProps): JSX.Element => {
 
   return (
     <button type={`button`} className={`button ${themeState.theme}`} onClick={onClick}>
-      {children}
+      <Text>{children}</Text>
     </button>
   );
 };

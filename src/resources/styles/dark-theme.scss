@@ -12,15 +12,16 @@ $color-dark-text: #e6e6e6;
 
 .content.dark {
   background: $color-dark-secondary-bg;
-  color: $color-dark-text;
 }
 
 .panel.dark {
   background: $color-dark-primary-bg;
-  color: $color-dark-text;
 }
 
 .button.dark {
   background: $color-dark-primary-bg;
+}
+
+.text.dark {
   color: $color-dark-text;
 }
