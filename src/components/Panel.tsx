@@ -1,12 +1,7 @@
-import React, {ReactNode} from 'react';
+import React, { ReactNode } from 'react';
 
 const Panel = ({ children }: { children: ReactNode }) => {
-
-    return (
-        <div className={'panel'}>
-            {children}
-        </div>
-    )
-}
+  return <div className={'panel'}>{children}</div>;
+};
 
 export default Panel;
