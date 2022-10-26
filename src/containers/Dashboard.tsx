@@ -1,7 +1,7 @@
 import React from 'react';
 import Panel from '../components/Panel';
-import { useThemeContext } from '../context/ThemeContext';
 import Text from '../components/Text';
+import { useThemeContext } from '../context/ThemeContext';
 
 const Dashboard = (): JSX.Element => {
   const { state: themeState } = useThemeContext();

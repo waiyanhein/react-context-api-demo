@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
-import { useThemeContext } from '../context/ThemeContext';
 import Text from './Text';
+import { useThemeContext } from '../context/ThemeContext';
 
 type ButtonProps = {
   onClick: () => void;

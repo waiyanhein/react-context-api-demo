@@ -1,8 +1,8 @@
 import React from 'react';
 import Panel from '../components/Panel';
 import Button from '../components/Button';
-import { useThemeContext } from '../context/ThemeContext';
 import Text from '../components/Text';
+import { useThemeContext } from '../context/ThemeContext';
 
 const Settings = (): JSX.Element => {
   const { state: themeState, actions: themeActions } = useThemeContext();
