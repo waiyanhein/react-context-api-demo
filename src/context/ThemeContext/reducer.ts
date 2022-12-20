@@ -8,7 +8,7 @@ export type Action = {
   payload: {
     theme: Theme;
   };
-};
+}
 
 export type ThemeState = {
   theme: Theme;
