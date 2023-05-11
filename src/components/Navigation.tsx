@@ -11,6 +11,9 @@ const Navigation = (): JSX.Element => {
         <Link to="/">Dashboard</Link>
       </li>
       <li>
+        <Link to="/tasks">Tasks</Link>
+      </li>
+      <li>
         <Link to="/settings">Settings</Link>
       </li>
     </ul>
