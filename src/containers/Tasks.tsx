@@ -20,9 +20,9 @@ export const Tasks = (): JSX.Element => {
 
   return (
     <div className={`content ${themeState.theme}`}>
-      <h3>
+      <h1>
         <Text>Tasks</Text>
-      </h3>
+      </h1>
       <div>
         <h4>
           <Text>New Task</Text>
