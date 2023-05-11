@@ -41,21 +41,21 @@ export const Tasks = (): JSX.Element => {
         </button>
       </div>
       <div>
-        <ul>
-          {tasks.map((task, index) => (
-            <li key={index}>
-              {task.description}{' '}
-              <button
-                onClick={() => {
-                  deleteTask(index);
-                }}
-                type={`button`}
-              >
-                Remove
-              </button>
-            </li>
-          ))}
-        </ul>
+        {tasks.map((task, index) => (
+          <p key={index}>
+            <Text>
+              {task.description} - <small>{task.createdAt}</small>
+            </Text>{' '}
+            <button
+              onClick={() => {
+                deleteTask(index);
+              }}
+              type={`button`}
+            >
+              Remove
+            </button>
+          </p>
+        ))}
       </div>
     </div>
   );
